@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#3a0f10" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Aditya &amp; Shreya — A Royal Hindu Wedding Invitation</title>
+  <meta name="description" content="A cinematic Hindu wedding invitation for Aditya and Shreya. 10–11 December 2026, Shivdhara Resort, Palanpur." />
+  <meta property="og:title" content="Aditya &amp; Shreya — Royal Wedding Invitation" />
+  <meta property="og:description" content="You are invited to witness a sacred union." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/preview.jpg" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;700&family=Tangerine:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="locked">
+  <div class="top-progress"><span id="progressBar"></span></div>
+  <canvas id="fxCanvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div id="entry" class="entry" aria-label="Open invitation">
+    <div class="entry-bg"></div>
+    <div class="entry-mandala" aria-hidden="true"></div>
+    <div class="entry-bells" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="ring-drop-stage">
+      <div class="ring-drop-shadow"></div>
+      <div id="entryRing" class="entry-ring" aria-hidden="true">
+        <span class="ring-inner"></span>
+        <span class="diamond"></span>
+        <span class="spark s1">✦</span>
+        <span class="spark s2">✧</span>
+        <span class="spark s3">✦</span>
+      </div>
+      <div class="entry-portal"></div>
+    </div>
+    <div class="entry-copy">
+      <p class="entry-kicker">॥ श्री गणेशाय नमः ॥</p>
+      <h1>Aditya <span>&amp;</span> Shreya</h1>
+      <p class="entry-sub">A sacred celebration. A grand invitation. A story told through light, music and ritual.</p>
+      <button id="openBtn" class="entry-btn">LET THE RING REVEAL THE CELEBRATION</button>
+      <small>Best experienced with sound on</small>
+    </div>
+  </div>
+
+  <header id="siteHeader" class="site-header" aria-label="Main navigation">
+    <a href="#home" class="brand"><span class="brand-script">A</span><span class="brand-dot">✦</span><span class="brand-script">S</span></a>
+    <nav>
+      <a href="#sufi">Sufi</a>
+      <a href="#haldi">Haldi</a>
+      <a href="#baraat">Baraat</a>
+      <a href="#wedding">Wedding</a>
+      <a href="#rsvp">RSVP</a>
+    </nav>
+    <div class="header-actions">
+      <button class="sound-toggle" id="soundToggle" aria-pressed="false"><span id="soundLabel">SOUND OFF</span></button>
+    </div>
+  </header>
+
+  <main id="siteMain" inert>
+    <section id="home" class="hero-scene scene" data-theme="hero">
+      <div class="sticky-stage hero-stage">
+        <div class="hero-aura"></div>
+        <div class="ring-reveal" aria-hidden="true">
+          <div class="ring-circle"></div>
+          <div class="ring-shine"></div>
+        </div>
+        <div class="door door-left" aria-hidden="true"></div>
+        <div class="door door-right" aria-hidden="true"></div>
+        <div class="palace-wrap" aria-hidden="true"><img src="assets/palace.svg" alt="" /></div>
+        <div class="hero-content">
+          <p class="hero-blessing">WITH THE BLESSINGS OF OUR ELDERS</p>
+          <p class="hero-overline">THE AGRAWAL &amp; KOTHARI FAMILIES INVITE YOU TO WITNESS A SACRED UNION</p>
+          <h2 class="hero-names"><span>Aditya</span><i>&amp;</i><span>Shreya</span></h2>
+          <div class="hero-date">
+            <b>10 — 11</b>
+            <div><span>DECEMBER</span><small>2026</small></div>
+          </div>
+          <p class="hero-location">Shivdhara Resort · Palanpur, Gujarat</p>
+        </div>
+        <div class="scroll-cue">SCROLL TO BEGIN THE JOURNEY</div>
+      </div>
+    </section>
+
+    <section id="blessings" class="paper-section">
+      <div class="paper-shell reveal">
+        <p class="deva">॥ श्री गणेशाय नमः ॥</p>
+        <p class="deva-verse">वक्रतुण्ड महाकाय, सूर्यकोटि समप्रभः।<br>निर्विघ्नं कुरु मे देव, सर्वकार्येषु सर्वदा॥</p>
+        <div class="divider"><span></span>✦<span></span></div>
+        <h2>The sacred beginning of<br><em>two destinies becoming one.</em></h2>
+        <p class="blessing-copy">By the boundless grace of Shri Mangalmay Ganesh ji Maharaj, our Kul Devta Shri Narsingh ji Maharaj, our Kuldevi Beri Wali Maa, and our Pitru Devta ji, we invite you to join us in celebrating a union blessed with love, family, and tradition.</p>
+        <div class="family-grid">
+          <article>
+            <small>THE GROOM</small>
+            <h3>Aditya <span>(Raghav)</span></h3>
+            <p>Grandson of Late Smt. Sarbati Devi &amp; Late Shri Lalchand ji Agrawal</p>
+            <p>Son of Smt. Beena &amp; Shri Narayanlal Agrawal</p>
+          </article>
+          <div class="family-sep">✦</div>
+          <article>
+            <small>THE BRIDE</small>
+            <h3>Shreya</h3>
+            <p>Granddaughter of Smt. Ratan Ben &amp; Late Shri Basant Raj ji Kothari</p>
+            <p>Daughter of Smt. Dilkhush &amp; Shri Kamlesh ji Kothari (Mumbai)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-strip reveal">
+      <p class="mini">THE CELEBRATIONS</p>
+      <div class="timeline-pills">
+        <span>10 Dec · Sufi Night</span>
+        <span>11 Dec · Haldi Carnival</span>
+        <span>11 Dec · Baraat</span>
+        <span>11 Dec · Reception</span>
+        <span>11/12 Dec · Wedding</span>
+      </div>
+    </section>
+
+    <section id="sufi" class="scene event-scene theme-sufi" data-theme="sufi">
+      <div class="sticky-stage">
+        <div class="scene-backdrop"></div>
+        <div class="scene-halo"></div>
+        <div class="scene-ornament orbit-stars" aria-hidden="true"></div>
+        <div class="scene-art"><img src="assets/sufi.svg" alt="Illustrated Sufi Night celebration" /></div>
+        <div class="scene-copy">
+          <span class="chapter-no">01 / 05</span>
+          <p class="eyebrow">Sufi Night</p>
+          <h2>Moonlit melodies.<br><em>Whirling hearts.</em></h2>
+          <p class="body">An evening where qawwalis, lights and laughter gather beneath the stars.</p>
+          <div class="event-meta"><span>Thursday · 10 December 2026</span><span>7:00 PM</span><span>Shivdhara Resort · Palanpur</span></div>
+          <button class="save-btn" data-event="sufi">SAVE THIS EVENT</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="haldi" class="scene event-scene theme-haldi" data-theme="haldi">
+      <div class="sticky-stage">
+        <div class="scene-backdrop"></div>
+        <div class="scene-halo"></div>
+        <div class="scene-ornament marigold-burst" aria-hidden="true"></div>
+        <div class="scene-art"><img src="assets/haldi.svg" alt="Illustrated Haldi celebration" /></div>
+        <div class="scene-copy">
+          <span class="chapter-no">02 / 05</span>
+          <p class="eyebrow">Haldi Carnival</p>
+          <h2>Turmeric sunshine.<br><em>Joy in every direction.</em></h2>
+          <p class="body">A riot of yellow, marigolds, teasing rituals and the happiest chaos imaginable.</p>
+          <div class="event-meta"><span>Friday · 11 December 2026</span><span>10:30 AM</span><span>Shivdhara Resort · Palanpur</span></div>
+          <button class="save-btn" data-event="haldi">SAVE THIS EVENT</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="baraat" class="scene event-scene theme-baraat" data-theme="baraat">
+      <div class="sticky-stage">
+        <div class="scene-backdrop"></div>
+        <div class="scene-halo"></div>
+        <div class="baraat-flags" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="baraat-beat" aria-hidden="true"></div>
+        <div class="scene-art"><img src="assets/baraat.svg" alt="Illustrated royal baraat" /></div>
+        <div class="scene-copy">
+          <span class="chapter-no">03 / 05</span>
+          <p class="eyebrow">Baraat</p>
+          <h2>Dhol thunder.<br><em>A royal procession unleashed.</em></h2>
+          <p class="body">The groom arrives in full grandeur — music surges, feet move, and celebration becomes unstoppable.</p>
+          <div class="event-meta"><span>Friday · 11 December 2026</span><span>5:00 PM</span><span>Shivdhara Resort · Palanpur</span></div>
+          <button class="save-btn" data-event="baraat">SAVE THIS EVENT</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="reception" class="scene event-scene theme-reception" data-theme="reception">
+      <div class="sticky-stage">
+        <div class="scene-backdrop"></div>
+        <div class="scene-halo"></div>
+        <div class="reception-prism" aria-hidden="true"></div>
+        <div class="scene-art"><img src="assets/reception.svg" alt="Illustrated reception" /></div>
+        <div class="scene-copy">
+          <span class="chapter-no">04 / 05</span>
+          <p class="eyebrow">Reception</p>
+          <h2>Light, grace,<br><em>and blessings in bloom.</em></h2>
+          <p class="body">An elegant evening of warm wishes, floral splendour and togetherness.</p>
+          <div class="event-meta"><span>Friday · 11 December 2026</span><span>7:30 PM onwards</span><span>Shivdhara Resort · Palanpur</span></div>
+          <button class="save-btn" data-event="reception">SAVE THIS EVENT</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="wedding" class="scene event-scene theme-wedding" data-theme="wedding">
+      <div class="sticky-stage">
+        <div class="scene-backdrop"></div>
+        <div class="wedding-glow"></div>
+        <div class="havan-transition" aria-hidden="true">
+          <div class="fire-bowl"></div>
+          <div class="flame flame-a"></div>
+          <div class="flame flame-b"></div>
+          <div class="flame flame-c"></div>
+        </div>
+        <div class="scene-art"><img src="assets/wedding.svg" alt="Illustrated Hindu wedding under mandap with sacred fire" /></div>
+        <div class="scene-copy final-copy">
+          <span class="chapter-no">05 / 05</span>
+          <p class="eyebrow">The Wedding</p>
+          <h2>Seven vows.<br><em>One eternal sacred fire.</em></h2>
+          <p class="body">As the havan glows and the mantras rise, two lives become one forever.</p>
+          <div class="event-meta"><span>Friday Night · 11 December 2026</span><span>Midnight</span><span>Shivdhara Resort · Palanpur</span></div>
+          <button class="save-btn" data-event="wedding">SAVE THIS EVENT</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown-section reveal" id="countdownSection">
+      <p class="mini">UNTIL THE CELEBRATION</p>
+      <h2>Every moment now leads to<br><em>that sacred fire.</em></h2>
+      <div class="countdown" id="countdown" role="timer" aria-live="off">
+        <div><strong id="days">00</strong><small>DAYS</small></div>
+        <i>:</i>
+        <div><strong id="hours">00</strong><small>HOURS</small></div>
+        <i>:</i>
+        <div><strong id="minutes">00</strong><small>MINS</small></div>
+        <i>:</i>
+        <div><strong id="seconds">00</strong><small>SECS</small></div>
+      </div>
+      <button id="calendarAll" class="outline-cta">ADD ALL EVENTS TO CALENDAR</button>
+    </section>
+
+    <section class="venue-rsvp">
+      <div class="venue-card reveal">
+        <p class="mini">VENUE</p>
+        <h2>Shivdhara Resort</h2>
+        <p>Chitrasani, Deesa Highway<br>Palanpur, Gujarat, India</p>
+        <div class="venue-actions">
+          <a class="primary-cta" href="https://www.google.com/maps/search/?api=1&amp;query=Shivdhara+Resort%2C+Palanpur%2C+Gujarat" target="_blank" rel="noopener noreferrer">GET DIRECTIONS</a>
+          <button id="copyVenue" class="outline-cta">COPY ADDRESS</button>
+        </div>
+      </div>
+      <div id="rsvp" class="rsvp-card reveal">
+        <p class="mini">RSVP</p>
+        <h2>Your presence will make it complete.</h2>
+        <p>We would be honoured to celebrate with you.</p>
+        <a class="rsvp-link" href="tel:+919413373248"><span>RSVP BY PHONE</span><strong>+91 94133 73248</strong></a>
+        <small>Shri Narayanlal Agrawal</small>
+        <div class="venue-actions">
+          <button id="shareInvite" class="outline-cta">SHARE INVITATION</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with devotion, colour and celebration</p>
+    <strong>Aditya &amp; Shreya</strong>
+    <p>10 — 11 December 2026 · Palanpur, Gujarat</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <audio id="bgAudio" src="assets/celebration-soundscape.mp3" loop preload="none"></audio>
+</body>
+</html>
